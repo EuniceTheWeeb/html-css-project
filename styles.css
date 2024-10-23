@@ -1,0 +1,179 @@
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* MARK: navbar */
+
+.navbar-brand img{
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+.navbar {
+    background-color: #697d73!important;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-link {
+    margin: 0 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: white;
+    margin-right: .25rem;
+}
+
+.main-logo {
+    display: flex;
+    width: 10rem;
+    align-items: center;
+    margin: auto;
+}
+
+/* MARK: main body */
+#Home {
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+body {
+    padding-top: 3.75rem;
+}
+
+section {
+    margin: 3rem;
+}
+
+p {
+    margin: 1rem;
+    font-size: 12px;
+}
+
+hr {
+    width: 80%;
+    border: 2px solid #697d73;
+    margin: auto;
+    opacity: 100%;
+}
+
+/* MARK: characters */
+.protagonist {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(105, 125, 115, 25%);
+    margin: 2rem;
+    width: 90%;
+}
+
+.mc-details img {
+    padding: 1rem;
+    align-items: center;
+}
+
+.mc-details h2,
+.mc-details p {
+    margin: 1rem;
+    text-align: left;
+}
+
+.mc-details {
+    display: inline-flexbox;
+}
+
+/* MARK: Gallery */
+.all-vol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vol {
+    flex-basis: 35%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 1rem;
+}
+
+.vol img {
+    width: auto;
+    height: 8rem;
+}
+
+/* MARK: CTA */
+.cta {
+    border: 2px solid #697d73;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px;
+    color: #697d73;
+    margin: 2rem;
+    width: 40vh;
+    display: block;
+    justify-self: center;
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: #697d73;
+    color: white;
+}
+
+footer {
+    color: white;
+    background-color: #697d73;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* MARK: Responsive styles */
+@media (min-width: 576px) {
+    .vol {
+        flex-basis: 30%;
+    }
+    .cta {
+        display: inline-block;
+        width: 50vh;
+    }
+    .protagonist {
+        margin: 1rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .vol {
+        flex-basis: 22%;
+    }
+    .cta {
+        display: inline-block;
+    }
+    p {
+        font-size: 16px;
+        margin: 2rem;
+    }
+    .protagonist {
+        margin: 0 1rem;
+        width: 100%;
+        height: 100%;
+    }
+}
